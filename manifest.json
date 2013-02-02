@@ -1,0 +1,18 @@
+{
+	"name":"いつでもももクロ",
+	"description":"can always get information of momoclo",
+	"manifest_version":2,
+	"version":"0.1",
+	"background":{
+		"scripts":["background.js"]
+	},
+	"permissions": [
+	"http://blogara.jp/"
+	],
+	"content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+	"browser_action":{
+		"default_icon":"favicon.png",
+		"default_title":"いつでもももクロ",
+		"default_popup":"popup.html"
+	}
+}
