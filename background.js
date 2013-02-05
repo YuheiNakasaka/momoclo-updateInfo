@@ -8,12 +8,12 @@ function createMomocloData(){
       var xmlDoc = xhr.responseXML;
       var updatedLists = xmlDoc.getElementsByTagName("updated");
       //newの比較用
-      if(updatedLists[0].toString() !== cmpUpdate){
+      if(updatedLists[0].childNodes[0].nodeValue !== cmpUpdate){
           newFlag = 'new';
       }else{
           newFlag = 'old';
       }
-      cmpUpdate = updatedLists[0].toString();
+      cmpUpdate = updatedLists[0].childNodes[0].nodeValue;
     }
   }
   //newプッシュ
